@@ -20,7 +20,7 @@ select, input, button
 }
 .food-img 
 { 
-    width: 35%; 
+    width: 350px; 
     max-height: 350px; 
     margin: 10px 0; 
     border-radius: 10px; 
