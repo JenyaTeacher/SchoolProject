@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Калькулятор КБЖВ</h2>
+        <label for="food">Оберіть страву:</label>
+        <select id="food" onchange="updateImage()">
+            <option value="100,10,5,15,chicken.png">Куряча грудка (100ккал, 10г білків, 5г жирів, 15г вуглеводів)</option>
+            <option value="150,12,8,10,syrniki.png">Сирники (150ккал, 12г білків, 8г жирів, 10г вуглеводів)</option>
+            <option value="200,5,10,30,oatmeals.png">Вівсянка (200ккал, 5г білків, 10г жирів, 30г вуглеводів)</option>
+        </select>
+        <img id="foodImage" src="chicken.png" class="food-img">
+        <label for="weight">Кількість грамів:</label>
+        <input type="number" id="weight" placeholder="Введіть вагу в грамах">
+        <button onclick="calculate()">Розрахувати</button>
+        <h3>Результати:</h3>
+        <p id="result"></p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
