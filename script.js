@@ -16,5 +16,5 @@ function updateImage() {
     let food = document.getElementById("food").value.split(",");
     document.getElementById("foodImage").src = food[4];
     document.getElementById("foodImage").style.width="350px"
-     document.getElementById("foodImage").style.height="300px"
+     document.getElementById("foodImage").style.height="350px"
 }
